@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">besProject</string>
+    <string name="app_name">BesProject</string>
+    <string name="buttonDz1">Дз1</string>
+    <string name="buttonDz2">Дз2</string>
+    <string name="buttonDz3">Дз3</string>
+    <string name="headText">Мои ДЗ по курсу Android Разработка.</string>
 </resources>
