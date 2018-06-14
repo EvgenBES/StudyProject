@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:text="@string/headText" />
 
@@ -48,31 +48,31 @@
 
         <Button
             android:id="@+id/buttonDz1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:text="@string/buttonDz1"
-            android:textSize="20dp"
-            android:textAllCaps="false"/>
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonDz2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:layout_marginRight="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:text="@string/buttonDz2"
-            android:textAllCaps="false"/>
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonDz3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
-            android:textSize="20dp"
             android:text="@string/buttonDz3"
-            android:textAllCaps="false"/>
+            android:textSize="20sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

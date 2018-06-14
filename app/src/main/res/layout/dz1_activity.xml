@@ -10,17 +10,18 @@
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/headTextDz1"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -50,8 +51,9 @@
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:text="@string/text1Dz1"
-            android:textSize="18dp"
-            android:clickable="true"/>
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true" />
 
 
         <Button
@@ -62,7 +64,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
             android:text="@string/buttonClickDz1"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/text2ViewDz1"
@@ -77,8 +79,9 @@
             android:paddingRight="25dp"
             android:layout_weight="1"
             android:text="@string/text2Dz1"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:clickable="true"
-            android:onClick="changeTextView"/>
+            android:onClick="changeTextView"
+            android:focusable="true" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -9,5 +9,7 @@ public class Dz2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dz2_activity);
+
+
     }
 }

@@ -2,22 +2,31 @@
     <!-- String MainActivity -->
 
     <string name="app_name">BesProject</string>
-    <string name="buttonDz1">Дз1</string>
-    <string name="buttonDz2">Дз2</string>
-    <string name="buttonDz3">Дз3</string>
+    <string name="buttonDz1">Дз 1</string>
+    <string name="buttonDz2">Дз 2</string>
+    <string name="buttonDz3">Дз 3</string>
     <string name="headText">Мои ДЗ по курсу Android Разработка.</string>
     <!-- Finish string MainActivity -->
 
 
     <!-- Sting Dz1_Activity -->
 
-    <string name="headTextDz1">Решение Дз1</string>
+    <string name="headTextDz1">Решение Дз №1</string>
     <string name="text1Dz1">Text 1</string>
     <string name="text2Dz1">Text 2</string>
     <string name="buttonClickDz1">Click Me</string>
     <!-- Finish string Dz1_Activity -->
 
     <!-- Sting Dz2_Activity -->
-    <string name="headTextDz2">Решение Дз2</string>
+    <string name="headTextDz2">Решение Дз №2</string>
+    <!-- Finish string Dz2_Activity -->
+
+    <!-- Sting Dz3_Activity -->
+    <string name="headTextDz3">Решение Дз №3</string>
+    <string name="loadButton">Loading</string>
+    <string name="randomButton">Random</string>
+    <string name="urlImage">Enter URL IMAGE:</string>
+    <string name="textViewDz3">If its hard for you to type URL then click this button!</string>
+
     <!-- Finish string Dz2_Activity -->
 </resources>
