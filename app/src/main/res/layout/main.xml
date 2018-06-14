@@ -27,6 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="20dp"
             android:gravity="center"
             android:text="@string/headText" />
 
@@ -46,24 +47,32 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonDz1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonDz1" />
+            android:text="@string/buttonDz1"
+            android:textSize="20dp"
+            android:textAllCaps="false"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/buttonDz2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonDz2" />
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/buttonDz2"
+            android:textAllCaps="false"/>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/buttonDz3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonDz3" />
+            android:textSize="20dp"
+            android:text="@string/buttonDz3"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

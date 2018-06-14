@@ -19,7 +19,8 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/headTextDz1" />
+            android:text="@string/headTextDz1"
+            android:textSize="20dp"/>
 
     </LinearLayout>
 
@@ -47,7 +48,8 @@
             android:layout_marginBottom="6dp"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:text="@string/text1Dz1" />
+            android:text="@string/text1Dz1"
+            android:textSize="18dp"/>
 
 
         <Button
@@ -55,7 +57,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonClickDz1" />
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/buttonClickDz1"
+            android:textSize="18dp"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -70,6 +75,7 @@
             android:paddingRight="25dp"
             android:layout_weight="1"
             android:text="@string/text2Dz1"
+            android:textSize="18dp"
             />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
