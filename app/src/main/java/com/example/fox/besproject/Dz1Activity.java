@@ -19,9 +19,9 @@ public class Dz1Activity extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dz1_activity);
 
-        text1ViewDz1 = (TextView) findViewById(R.id.text1ViewDz1);
-        text2ViewDz1 = (TextView) findViewById(R.id.text2ViewDz1);
-        buttonDz1ClickMe = (Button) findViewById(R.id.buttonDz1ClickMe);
+        text1ViewDz1 = findViewById(R.id.text1ViewDz1);
+        text2ViewDz1 = findViewById(R.id.text2ViewDz1);
+        buttonDz1ClickMe = findViewById(R.id.buttonDz1ClickMe);
 
 
 //First method click button
