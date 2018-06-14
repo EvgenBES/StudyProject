@@ -38,22 +38,24 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/text1ViewDz1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_weight="1"
-            android:background="@color/colorAccent"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWithe"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="6dp"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:text="@string/text1Dz1"
-            android:textSize="18dp"/>
+            android:textSize="18dp"
+            android:clickable="true"/>
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonDz1ClickMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -63,7 +65,7 @@
             android:textSize="18dp"/>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/text2ViewDz1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -76,6 +78,7 @@
             android:layout_weight="1"
             android:text="@string/text2Dz1"
             android:textSize="18dp"
-            />
+            android:clickable="true"
+            android:onClick="changeTextView"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
