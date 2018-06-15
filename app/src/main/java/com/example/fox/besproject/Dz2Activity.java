@@ -8,7 +8,7 @@ public class Dz2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dz2_activity);
+        setContentView(R.layout.activity_dz2);
 
 
     }

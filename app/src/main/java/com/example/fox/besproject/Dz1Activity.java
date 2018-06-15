@@ -42,7 +42,7 @@ public class Dz1Activity extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dz1_activity);
+        setContentView(R.layout.activity_dz1);
 
         text1ViewDz1 = findViewById(R.id.text1ViewDz1);
         text2ViewDz1 = findViewById(R.id.text2ViewDz1);

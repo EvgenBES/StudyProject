@@ -10,21 +10,23 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 public class Dz3Activity extends AppCompatActivity {
-
     ImageView imageView;
+
     EditText editTextDz3;
-    Button loadButton, randomButton;
+    Button loadButton, randomButton, transButton;
     String randomUrl;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dz3_activity);
+        setContentView(R.layout.activity_dz3);
 
         imageView = findViewById(R.id.imageViewDz3);
         editTextDz3 = findViewById(R.id.editTextDz3);
         loadButton = findViewById(R.id.loadButton);
         randomButton = findViewById(R.id.randomButton);
+        transButton = findViewById(R.id.transButton);
 
 
 
@@ -69,12 +71,23 @@ public class Dz3Activity extends AppCompatActivity {
                                 .placeholder(R.drawable.ic_hourglass_empty_black_24dp)
                                 .error(R.drawable.ic_perm_scan_wifi_black_24dp)
                                 .into(imageView);
+                        break;
+
+                    case R.id.transButton:
+                        Picasso.get()
+                                .load(randomUrl)
+                                .placeholder(R.drawable.ic_hourglass_empty_black_24dp)
+                                .error(R.drawable.ic_perm_scan_wifi_black_24dp)
+                                .transform(new CircularTransformation())
+                                .into(imageView);
+                        break;
                 }
             }
         };
 
         loadButton.setOnClickListener(OnClickListener);
         randomButton.setOnClickListener(OnClickListener);
+        transButton.setOnClickListener(OnClickListener);
 
     }
 

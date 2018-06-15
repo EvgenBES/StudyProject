@@ -25,6 +25,7 @@
     <string name="headTextDz3">Решение Дз №3</string>
     <string name="loadButton">Loading</string>
     <string name="randomButton">Random</string>
+    <string name="transButton">Transform</string>
     <string name="urlImage">Enter URL IMAGE:</string>
     <string name="textViewDz3">If its hard for you to type URL then click this button!</string>
 

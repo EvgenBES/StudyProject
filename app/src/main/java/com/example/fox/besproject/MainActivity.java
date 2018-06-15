@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button buttonDz1, buttonDz2, buttonDz3;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonDz1.setOnClickListener(this);
         buttonDz2.setOnClickListener(this);
         buttonDz3.setOnClickListener(this);
+
     }
 
 
