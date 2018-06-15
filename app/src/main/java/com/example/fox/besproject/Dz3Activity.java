@@ -9,17 +9,17 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-public class Dz3Activity extends AppCompatActivity implements View.OnClickListener{
+public class Dz3Activity extends AppCompatActivity {
 
     ImageView imageView;
     EditText editTextDz3;
     Button loadButton, randomButton;
+    String randomUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dz3_activity);
-
 
         imageView = findViewById(R.id.imageViewDz3);
         editTextDz3 = findViewById(R.id.editTextDz3);
@@ -27,15 +27,60 @@ public class Dz3Activity extends AppCompatActivity implements View.OnClickListen
         randomButton = findViewById(R.id.randomButton);
 
 
-        randomButton.setOnClickListener(this);
+
+        View.OnClickListener OnClickListener = new View.OnClickListener(){
+// Random Method (create int 1-5 and assigns url to string randomUrl)
+            public void randomIntButton(){
+                int random_number = 1 + (int) (Math.random() * 5);
+                switch (random_number){
+                    case 1:
+                        randomUrl = "https://avatarko.ru/img/avatar/33/multfilm_mech_minion_32681.jpg";
+                        break;
+                    case 2:
+                        randomUrl = "https://avatarko.ru/img/avatar/30/multfilm_eda_sport_Griffins_29419.jpg";
+                        break;
+                    case 3:
+                        randomUrl = "https://avatarko.ru/img/avatar/23/multfilm_22820.jpg";
+                        break;
+                    case 4:
+                        randomUrl = "https://avatarko.ru/img/avatar/19/multfilm_cyplyonok_18522.jpg";
+                        break;
+                    case 5:
+                        randomUrl = "https://avatarko.ru/img/avatar/17/multfilm_lemur_16195.jpg";
+                        break;
+                }
+            }
+
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()){
+                    case R.id.loadButton:
+                        Picasso.get()
+                                .load(editTextDz3.getText().toString())
+                                .placeholder(R.drawable.ic_hourglass_empty_black_24dp)
+                                .error(R.drawable.ic_perm_scan_wifi_black_24dp)
+                                .into(imageView);
+                        break;
+
+                    case R.id.randomButton:
+                        randomIntButton();
+                        Picasso.get()
+                                .load(randomUrl)
+                                .placeholder(R.drawable.ic_hourglass_empty_black_24dp)
+                                .error(R.drawable.ic_perm_scan_wifi_black_24dp)
+                                .into(imageView);
+                }
+            }
+        };
+
+        loadButton.setOnClickListener(OnClickListener);
+        randomButton.setOnClickListener(OnClickListener);
+
     }
 
-    @Override
-    public void onClick(View view) {
-        Picasso.get()
-                .load("https://avatarko.ru/img/avatar/33/multfilm_mech_minion_32681.jpg")
-                .placeholder(R.drawable.ic_hourglass_empty_black_24dp)
-                .error(R.drawable.ic_perm_scan_wifi_black_24dp)
-                .into(imageView);
-    }
+
+
+
+
+
 }

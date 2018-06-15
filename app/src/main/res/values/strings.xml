@@ -2,9 +2,9 @@
     <!-- String MainActivity -->
 
     <string name="app_name">BesProject</string>
-    <string name="buttonDz1">Дз 1</string>
-    <string name="buttonDz2">Дз 2</string>
-    <string name="buttonDz3">Дз 3</string>
+    <string name="buttonDz1">1</string>
+    <string name="buttonDz2">2</string>
+    <string name="buttonDz3">3</string>
     <string name="headText">Мои ДЗ по курсу Android Разработка.</string>
     <!-- Finish string MainActivity -->
 
