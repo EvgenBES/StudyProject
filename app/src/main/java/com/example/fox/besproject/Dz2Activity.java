@@ -10,6 +10,7 @@ public class Dz2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dz2);
 
-
+// Animation
+        overridePendingTransition(R.anim.up_and_down, R.anim.lost_activity_out);
     }
 }

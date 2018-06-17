@@ -19,7 +19,6 @@ public class MyCustomApplication extends Application {
         super.onCreate();
         if(BuildConfig.DEBUG)
             refWatcher = LeakCanary.install(this);
-
     }
 }
 

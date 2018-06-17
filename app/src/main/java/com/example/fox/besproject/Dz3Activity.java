@@ -22,6 +22,9 @@ public class Dz3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dz3);
 
+//Animation
+        overridePendingTransition(R.anim.right_to_left, R.anim.lost_activity_out);
+
         imageView = findViewById(R.id.imageViewDz3);
         editTextDz3 = findViewById(R.id.editTextDz3);
         loadButton = findViewById(R.id.loadButton);
