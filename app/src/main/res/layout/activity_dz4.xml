@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headTextDz4" />
 
-    <com.example.fox.besproject.ClockView
+    <com.example.fox.besproject.files_dz4.ClockView
         android:id="@+id/clockViewDz4"
         android:layout_width="300dp"
         android:layout_height="300dp"

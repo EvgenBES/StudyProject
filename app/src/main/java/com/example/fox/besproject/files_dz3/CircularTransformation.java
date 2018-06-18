@@ -1,4 +1,4 @@
-package com.example.fox.besproject;
+package com.example.fox.besproject.files_dz3;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
