@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/sova_xxhdpi_preview" android:duration="175"/>
+    <item
+        android:drawable="@drawable/sova_xxhdpi_step2" android:duration="125"/>
+    <item
+        android:drawable="@drawable/sova_xxhdpi_step3" android:duration="175"/>
+
+</animation-list>

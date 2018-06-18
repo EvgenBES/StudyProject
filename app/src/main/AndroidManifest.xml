@@ -19,11 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".Dz1Activity" />
         <activity android:name=".Dz2Activity" />
         <activity android:name=".Dz3Activity" />
+        <activity android:name=".Dz4Activity"></activity>
     </application>
 
 </manifest>

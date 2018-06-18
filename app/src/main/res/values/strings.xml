@@ -5,6 +5,7 @@
     <string name="buttonDz1">1</string>
     <string name="buttonDz2">2</string>
     <string name="buttonDz3">3</string>
+    <string name="buttonDz4">4</string>
     <string name="headText">Мои ДЗ по курсу Android Разработка.</string>
     <!-- Finish string MainActivity -->
 
@@ -28,6 +29,9 @@
     <string name="transButton">Transform</string>
     <string name="urlImage">Enter URL IMAGE:</string>
     <string name="textViewDz3">If its hard for you to type URL then click this button!</string>
+    <!-- Finish string Dz3_Activity -->
 
-    <!-- Finish string Dz2_Activity -->
+    <!-- Sting Dz4_Activity -->
+    <string name="headTextDz4">Решение Дз №4</string>
+    <!-- Finish string Dz4_Activity -->
 </resources>
