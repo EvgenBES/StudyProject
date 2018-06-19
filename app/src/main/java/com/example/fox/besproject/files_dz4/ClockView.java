@@ -114,8 +114,8 @@ public class ClockView extends View {
         canvas.rotate(180, getWidth() / 2, getHeight() / 2);
         canvas.drawText("12",getWidth()/2.12f, getHeight() /6 ,paintText);
         canvas.drawText("6",getWidth()/2.06f, getHeight() /1.13f ,paintText);
-        canvas.drawText("3",getWidth()/1.18f, getHeight() /1.92f ,paintText);
-        canvas.drawText("9",getWidth()/7.25f, getHeight() /1.9f ,paintText);
+        canvas.drawText("3",getWidth()/1.40f, getHeight() /1.92f ,paintText);
+        canvas.drawText("9",getWidth()/4f, getHeight() /1.9f ,paintText);
 
 
 
