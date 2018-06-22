@@ -1,8 +1,9 @@
-package com.example.fox.besproject;
+package com.example.fox.besproject.leaks;
 
 import android.app.Application;
 import android.content.Context;
 
+import com.example.fox.besproject.BuildConfig;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 

@@ -34,4 +34,14 @@
     <!-- Sting Dz4_Activity -->
     <string name="headTextDz4">Решение Дз №4</string>
     <!-- Finish string Dz4_Activity -->
+
+    <!-- Sting Dz5_Activity -->
+    <string name="headTextDz5">Решение Дз №5</string>
+    <string name="buttonDz5">5</string>
+    <string name="imageStatusWifi">StatusWiFi</string>
+    <string name="dz5_off">OFF</string>
+    <string name="dz5_on">ON</string>
+    <string name="wi_fi_settings">Wi-Fi Settings</string>
+    <string name="status_wifi_dz5">Статус WIFI</string>
+    <!-- Finish string Dz5_Activity -->
 </resources>

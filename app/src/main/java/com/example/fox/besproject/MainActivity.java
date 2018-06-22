@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button buttonDz1, buttonDz2, buttonDz3, buttonDz4;
+    Button buttonDz1, buttonDz2, buttonDz3, buttonDz4, buttonDz5;
 
 
     @Override
@@ -20,10 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonDz2 = findViewById(R.id.buttonDz2);
         buttonDz3 = findViewById(R.id.buttonDz3);
         buttonDz4 = findViewById(R.id.buttonDz4);
+        buttonDz5 = findViewById(R.id.buttonDz5);
         buttonDz1.setOnClickListener(this);
         buttonDz2.setOnClickListener(this);
         buttonDz3.setOnClickListener(this);
         buttonDz4.setOnClickListener(this);
+        buttonDz5.setOnClickListener(this);
 
     }
 
@@ -46,6 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonDz4:
                 Intent intent4 = new Intent(this, Dz4Activity.class);
                 startActivity(intent4);
+                break;
+            case R.id.buttonDz5:
+                Intent intent5 = new Intent(this, Dz5Activity.class);
+                startActivity(intent5);
                 break;
             default:
                 break;
