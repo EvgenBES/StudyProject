@@ -41,6 +41,8 @@
             android:name=".files_dz5.MyService"
             android:enabled="true"
             android:exported="true" />
+
+        <activity android:name=".Dz6Activity"></activity>
     </application>
 
 </manifest>
