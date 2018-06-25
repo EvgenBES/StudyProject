@@ -14,7 +14,7 @@ import android.view.View;
 public class pieView extends View {
     private RectF rectF;
     private Paint pieColor;
-    private int [] procent = {5,10,25,75,75}; //вбиваем цифры и получаем пирожочек
+    private int [] procent = {5,5,10}; //вбиваем цифры и получаем пирожочек
 
     public pieView(Context context) {
         super(context);

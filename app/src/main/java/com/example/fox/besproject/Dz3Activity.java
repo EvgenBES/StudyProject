@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.example.fox.besproject.files_dz3.CircularTransformation;
 import com.squareup.picasso.Picasso;
 
-public class Dz3Activity extends AppCompatActivity {
+public class    Dz3Activity extends AppCompatActivity {
     ImageView imageView;
 
     EditText editTextDz3;

@@ -3,7 +3,7 @@
     package="com.example.fox.besproject">
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
@@ -27,17 +27,20 @@
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
-                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>
         </receiver>
-
-
 
         <activity android:name=".Dz1Activity" />
         <activity android:name=".Dz2Activity" />
         <activity android:name=".Dz3Activity" />
         <activity android:name=".Dz4Activity" />
-        <activity android:name=".Dz5Activity"></activity>
+        <activity android:name=".Dz5Activity" />
+
+        <service
+            android:name=".files_dz5.MyService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
