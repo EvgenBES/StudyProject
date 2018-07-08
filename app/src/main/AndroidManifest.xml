@@ -42,7 +42,10 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Dz6Activity"></activity>
+        <activity android:name=".Dz6Activity" />
+        <activity android:name=".files_dz6.AddStudent" />
+        <activity android:name=".files_dz6.InfoStudent" />
+        <activity android:name=".files_dz6.EditInfoStudent"></activity>
     </application>
 
 </manifest>

@@ -48,5 +48,18 @@
 
     <!-- Sting Dz6_Activity -->
     <string name="headTextDz6">Решение Дз №6</string>
+    <string name="addPhone">Введите телефон</string>
+    <string name="addGroup">Введите группу</string>
+    <string name="addFoto">Ссылка на фото</string>
+    <string name="addSurname">Введите Фамилию</string>
+    <string name="addName">Введите Имя</string>
+    <string name="addNewStudent">Add New Student</string>
+    <string name="add_student">Add Student</string>
+    <string name="textview">TextView</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+
     <!-- Finish string Dz6_Activity -->
 </resources>

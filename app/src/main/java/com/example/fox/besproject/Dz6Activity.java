@@ -1,20 +1,41 @@
 package com.example.fox.besproject;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Person;
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
 
-import com.example.fox.besproject.files_dz6.StudentAddapter;
+import com.example.fox.besproject.files_dz6.AddStudent;
+import com.example.fox.besproject.files_dz6.SinglStudent;
 import com.example.fox.besproject.files_dz6.Student;
+import com.example.fox.besproject.files_dz6.StudentAddapter;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
-public class Dz6Activity extends AppCompatActivity {
+public class Dz6Activity extends AppCompatActivity implements View.OnClickListener {
 
-
+    ImageView imageViewAdd;
     RecyclerView recyclerView;
+    EditText filterName;
+
+
     private StudentAddapter studentAddapter;
+
+    SinglStudent singlStudent = SinglStudent.getInstance();
 
 
     @Override
@@ -22,13 +43,7 @@ public class Dz6Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dz6);
 
-        ArrayList<Student> studentList = new ArrayList<>();
-        studentList.add(new Student("Kirilston", "Subrect", "+375 44 485 45 45", "https://avatarko.ru/img/avatar/14/shlyapa_pistolet_Lego_13500.jpg", "15"));
-        studentList.add(new Student("Kirilston2", "Subrect2", "+375 44 485 45 45", "https://avatarko.ru/img/avatar/14/igra_soldat_13506.jpg", "17"));
-        studentList.add(new Student("Kirilston3", "Subrect3", "+375 44 485 45 45", "https://avatarko.ru/img/avatar/18/devushka_17296.jpg", "25"));
-        studentList.add(new Student("Kirilston4", "Subrect4", "+375 44 485 45 45", "https://avatarko.ru/img/avatar/31/igra_Dota_2_Omniknight_30248.jpg", "25"));
-        studentList.add(new Student("Kirilston5", "Subrect5", "+375 44 485 45 45", "https://avatarko.ru/img/avatar/8/zhivotnye_sobaka_7404.jpg", "15"));
-
+        imageViewAdd = findViewById(R.id.imageViewAdd);
 
         studentAddapter = new StudentAddapter();
         recyclerView = findViewById(R.id.recyclerView);
@@ -36,6 +51,42 @@ public class Dz6Activity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(studentAddapter);
 
-        studentAddapter.setDataList(studentList);
+        studentAddapter.setDataList(singlStudent.getArray());
+
+        filterName = findViewById(R.id.filterName);
+        filterName.addTextChangedListener(new TextWatcher() {
+            List<Student> filterText = new ArrayList<>();
+
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                filterText.clear();
+                for (int i = 0; i < singlStudent.getArray().size(); i++) {
+                    if (singlStudent.getArray().get(i).getName().toLowerCase().contains(editable.toString().toLowerCase()) ||
+                            singlStudent.getArray().get(i).getSurname().toLowerCase().contains(editable.toString().toLowerCase()) ||
+                            singlStudent.getArray().get(i).getPhone().toLowerCase().contains(editable.toString().toLowerCase())) {
+                        filterText.add(singlStudent.getArray().get(i));
+                    }
+                }
+                studentAddapter.setDataList((ArrayList<Student>) filterText);
+                recyclerView.setAdapter(studentAddapter);
+            }
+        });
     }
+
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(this, AddStudent.class);
+        startActivity(intent);
+    }
+
+
 }
