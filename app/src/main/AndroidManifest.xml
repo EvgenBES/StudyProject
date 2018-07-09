@@ -37,10 +37,7 @@
         <activity android:name=".Dz4Activity" />
         <activity android:name=".Dz5Activity" />
 
-        <service
-            android:name=".files_dz5.MyService"
-            android:enabled="true"
-            android:exported="true" />
+        <service android:name=".files_dz5.MyService"/>
 
         <activity android:name=".Dz6Activity" />
         <activity android:name=".files_dz6.AddStudent" />

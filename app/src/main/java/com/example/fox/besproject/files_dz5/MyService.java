@@ -15,23 +15,15 @@ import java.util.concurrent.TimeUnit;
 public class MyService extends Service {
 
 
-
-
     @Override
     public void onCreate() {
         super.onCreate();
         Log.e("BBB","onCreate 111");
-
-
-
-
-
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.e("BBB","onStartCommand 222");
-
         WifiManager wifiManager = (WifiManager) this.getApplicationContext()
                 .getSystemService(Context.WIFI_SERVICE);
             wifiManager.setWifiEnabled(true);
@@ -61,4 +53,14 @@ public class MyService extends Service {
                 .getSystemService(Context.WIFI_SERVICE);
         wifiManager.setWifiEnabled(false);
     }
+
+
+    public void turnOnOff(WifiManager wifiManager){
+        if(wifiManager.isWifiEnabled()){
+            wifiManager.setWifiEnabled(false);
+        }else{
+            wifiManager.setWifiEnabled(true);
+        }
+    }
+
 }

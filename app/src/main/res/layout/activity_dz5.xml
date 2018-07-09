@@ -47,19 +47,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewDz5"
         android:contentDescription="@string/imageStatusWifi"/>
 
-    <Switch
-        android:id="@+id/wifi_switch_dz5"
+    <Button
+        android:id="@+id/buttonOnOffWifi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="24dp"
-        android:background="@android:color/background_dark"
-        android:checked="false"
-        android:text="@string/wi_fi_settings"
-        android:textColor="@android:color/white"
-        android:textOn="@string/dz5_on"
-        android:textOff="@string/dz5_off"
+        android:layout_marginTop="20dp"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/imageTestWifi"
         app:layout_constraintStart_toStartOf="@+id/imageTestWifi"
         app:layout_constraintTop_toBottomOf="@+id/imageTestWifi" />
+
+
 </android.support.constraint.ConstraintLayout>
