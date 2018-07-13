@@ -22,6 +22,21 @@ public class SinglStudent {
         list.add (new Student("Evgen", "Puzicov", "+375 17 956 45 52", "https://avatarko.ru/img/avatar/18/devushka_17296.jpg", "25"));
         list.add (new Student("Sergey", "Perducov", "+375 44 854 98 23", "https://avatarko.ru/img/avatar/31/igra_Dota_2_Omniknight_30248.jpg", "25"));
         list.add (new Student("Kirilton", "Kokos", "+375 25 365 45 36", "https://avatarko.ru/img/avatar/7/zhivotnye_sobaka_6187.jpg", "33"));
+        list.add (new Student("Nikita", "Bulbus", "+375 29 325 23 77", "https://avatarko.ru/img/avatar/14/shlyapa_pistolet_Lego_13500.jpg", "15"));
+        list.add (new Student("Marina", "Mahnatus", "+375 44 154 12 85", "https://avatarko.ru/img/avatar/14/igra_soldat_13506.jpg", "17"));
+        list.add (new Student("Evgen", "Puzicov", "+375 17 956 45 52", "https://avatarko.ru/img/avatar/18/devushka_17296.jpg", "25"));
+        list.add (new Student("Sergey", "Perducov", "+375 44 854 98 23", "https://avatarko.ru/img/avatar/31/igra_Dota_2_Omniknight_30248.jpg", "25"));
+        list.add (new Student("Kirilton", "Kokos", "+375 25 365 45 36", "https://avatarko.ru/img/avatar/7/zhivotnye_sobaka_6187.jpg", "33"));
+        list.add (new Student("Nikita", "Bulbus", "+375 29 325 23 77", "https://avatarko.ru/img/avatar/14/shlyapa_pistolet_Lego_13500.jpg", "15"));
+        list.add (new Student("Marina", "Mahnatus", "+375 44 154 12 85", "https://avatarko.ru/img/avatar/14/igra_soldat_13506.jpg", "17"));
+        list.add (new Student("Evgen", "Puzicov", "+375 17 956 45 52", "https://avatarko.ru/img/avatar/18/devushka_17296.jpg", "25"));
+        list.add (new Student("Sergey", "Perducov", "+375 44 854 98 23", "https://avatarko.ru/img/avatar/31/igra_Dota_2_Omniknight_30248.jpg", "25"));
+        list.add (new Student("Kirilton", "Kokos", "+375 25 365 45 36", "https://avatarko.ru/img/avatar/7/zhivotnye_sobaka_6187.jpg", "33"));
+        list.add (new Student("Nikita", "Bulbus", "+375 29 325 23 77", "https://avatarko.ru/img/avatar/14/shlyapa_pistolet_Lego_13500.jpg", "15"));
+        list.add (new Student("Marina", "Mahnatus", "+375 44 154 12 85", "https://avatarko.ru/img/avatar/14/igra_soldat_13506.jpg", "17"));
+        list.add (new Student("Evgen", "Puzicov", "+375 17 956 45 52", "https://avatarko.ru/img/avatar/18/devushka_17296.jpg", "25"));
+        list.add (new Student("Sergey", "Perducov", "+375 44 854 98 23", "https://avatarko.ru/img/avatar/31/igra_Dota_2_Omniknight_30248.jpg", "25"));
+        list.add (new Student("Kirilton", "Kokos", "+375 25 365 45 36", "https://avatarko.ru/img/avatar/7/zhivotnye_sobaka_6187.jpg", "33"));
     }
     // retrieve array from anywhere
     public ArrayList<Student> getArray() {

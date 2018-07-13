@@ -37,12 +37,13 @@
         <activity android:name=".Dz4Activity" />
         <activity android:name=".Dz5Activity" />
 
-        <service android:name=".files_dz5.MyService"/>
+        <service android:name=".files_dz5.MyService" />
 
         <activity android:name=".Dz6Activity" />
         <activity android:name=".files_dz6.AddStudent" />
         <activity android:name=".files_dz6.InfoStudent" />
-        <activity android:name=".files_dz6.EditInfoStudent"></activity>
+        <activity android:name=".files_dz6.EditInfoStudent" />
+        <activity android:name=".Dz7Activity"></activity>
     </application>
 
 </manifest>

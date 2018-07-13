@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageInfoAvatar"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/infoStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:text="@string/textview"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:text="@string/surname" />
+
+                <EditText
+                    android:id="@+id/infoStudentSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:text="@string/textview"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:text="@string/groups" />
+
+                <EditText
+                    android:id="@+id/infoStudentGroups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:text="@string/textview"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:text="@string/phone" />
+
+                <EditText
+                    android:id="@+id/infoStudentPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:text="@string/textview"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonEditStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#bf40ae00"
+                    android:layout_weight="1"
+                    android:text="@string/edit" />
+
+                <Button
+                    android:id="@+id/buttonSaveStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#9b9b9b9b"
+                    android:textColor="#434242"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/buttonDelStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#bffd0004"
+                    android:layout_weight="1"
+                    android:text="@string/delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
