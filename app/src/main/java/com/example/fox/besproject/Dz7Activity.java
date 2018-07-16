@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.fox.besproject.files_dz7.FragmentInfo;
@@ -18,6 +19,7 @@ public class Dz7Activity extends FragmentActivity {
 
     FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentTransaction transaction = fragmentManager.beginTransaction();
+    private Fragment tempFragment = new FragmentInfo();
     private Fragment idFragmen;
 
     @Override
@@ -43,17 +45,13 @@ public class Dz7Activity extends FragmentActivity {
 
 
     public void addInfo(Fragment fragment) {
-
         if (!windowSize) {
             fragmentManager.beginTransaction().replace(R.id.fragmentList, fragment).commit();
         } else {
-            fragmentManager.beginTransaction().replace(R.id.fragmentInfo, fragment).commit();
             idFragmen = fragment;
+            fragmentManager.beginTransaction().replace(R.id.fragmentInfo, idFragmen).commit();
         }
-
-
     }
-
 
     public void refreshList(FragmentList fragmentList) {
         if (!windowSize) {
@@ -66,7 +64,13 @@ public class Dz7Activity extends FragmentActivity {
 
     public void fragmentListRefresh(FragmentList fragmentListRefresh) {
         fragmentManager.beginTransaction().replace(R.id.fragmentList, fragmentListRefresh).commit();
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        fragmentManager.beginTransaction().replace(R.id.fragmentInfo, tempFragment).commit();
+        fragmentManager.beginTransaction().remove(tempFragment).commit();
     }
 }
 

@@ -85,7 +85,7 @@ public class FragmentList extends Fragment {
                                 true
                         );
 
-                        FragmentInfo fragmentInfo = new FragmentInfo();
+                         FragmentInfo fragmentInfo = new FragmentInfo();
                         ((Dz7Activity) getActivity()).addInfo(fragmentInfo);
 
                     }
