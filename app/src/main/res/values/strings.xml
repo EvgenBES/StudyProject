@@ -9,6 +9,7 @@
     <string name="buttonDz5">5</string>
     <string name="buttonDz6">6</string>
     <string name="buttonDz7">7</string>
+    <string name="buttonDz8">8</string>
     <string name="headText">Мои ДЗ по курсу Android Разработка.</string>
     <!-- Finish string MainActivity -->
 
@@ -68,5 +69,6 @@
     <string name="surname">Фамилия:</string>
     <string name="groups">Группа:</string>
     <string name="phone">Телефон:</string>
+    <string name="headTextDz8">Что-то произвойдёт через:</string>
     <!-- Finish string Dz7_Activity -->
 </resources>

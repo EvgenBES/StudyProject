@@ -43,7 +43,8 @@
         <activity android:name=".files_dz6.AddStudent" />
         <activity android:name=".files_dz6.InfoStudent" />
         <activity android:name=".files_dz6.EditInfoStudent" />
-        <activity android:name=".Dz7Activity"></activity>
+        <activity android:name=".Dz7Activity" />
+        <activity android:name=".Dz8Activity"></activity>
     </application>
 
 </manifest>

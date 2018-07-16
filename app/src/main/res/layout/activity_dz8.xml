@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerLayoutDz8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dz8Activity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <TextView
+        android:id="@+id/textHeadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headTextDz8"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+    <fragment
+        android:name="com.example.fox.besproject.files_dz8.FragmentText"
+        android:id="@+id/fragmentText"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </fragment>
+
+</LinearLayout>
