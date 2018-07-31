@@ -1,5 +1,6 @@
 package com.example.fox.besproject;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -15,24 +16,19 @@ import com.example.fox.besproject.files_dz7.FragmentList;
 public class Dz7Activity extends FragmentActivity {
 
     boolean windowSize = false;
-
+    boolean statusFragment = false;
 
     FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentTransaction transaction = fragmentManager.beginTransaction();
-    private Fragment tempFragment = new FragmentInfo();
     private Fragment idFragmen;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Configuration configuration = getResources().getConfiguration();
 
-        DisplayMetrics metrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(metrics);
-
-        int width = metrics.widthPixels;
-        int height = metrics.heightPixels;
-
-        if (width < 1023 && height < 1023) {
+        if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.activity_dz7);
         } else {
             setContentView(R.layout.activity_dz7table);
@@ -48,6 +44,7 @@ public class Dz7Activity extends FragmentActivity {
         if (!windowSize) {
             fragmentManager.beginTransaction().replace(R.id.fragmentList, fragment).commit();
         } else {
+            statusFragment = true;
             idFragmen = fragment;
             fragmentManager.beginTransaction().replace(R.id.fragmentInfo, idFragmen).commit();
         }
@@ -67,10 +64,13 @@ public class Dz7Activity extends FragmentActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        fragmentManager.beginTransaction().replace(R.id.fragmentInfo, tempFragment).commit();
-        fragmentManager.beginTransaction().remove(tempFragment).commit();
+    protected void onPause() {
+        super.onPause();
+        windowSize = false;
+        if (statusFragment) {
+            getSupportFragmentManager().beginTransaction().remove(idFragmen).commit();
+        }
+
     }
 }
 

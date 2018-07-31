@@ -100,6 +100,7 @@ public class FragmentList extends Fragment {
         recyclerView.setAdapter(studentAddapterDz7);
 
 
+
     }
 }
 

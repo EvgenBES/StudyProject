@@ -19,17 +19,10 @@ public class FragmentText extends Fragment {
 
     TextView textNumberView;
 
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_text, container, false);
-
-
-
-
-
     }
 
     @Override
