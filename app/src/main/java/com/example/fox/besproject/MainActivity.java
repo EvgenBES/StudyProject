@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonDz6.setOnClickListener(this);
         buttonDz7.setOnClickListener(this);
         buttonDz8.setOnClickListener(this);
+        //nice
 
     }
 
